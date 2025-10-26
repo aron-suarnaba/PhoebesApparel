@@ -1,8 +1,8 @@
 <?php
 
-$requested_page = $_GET['page'] ?? 'home';
+$requested_page = $_GET['page'] ?? 'main';
 
-$page_file = 'pages/' . $requested_page . '.php';
+$page_file = 'section/' . $requested_page . '.php';
 
 require 'templates/header.php';
 

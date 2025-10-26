@@ -1,4 +1,4 @@
-<div class="container-fluid bg-dark bg-gradient text-white" style="min-height: 5rem;">
+<div class="container-fluid bg-dark bg-gradient text-white" style="min-height: 6vh;" id="about">
     <div class="row py-5">
         <div class="col-12 col-md-4">
 

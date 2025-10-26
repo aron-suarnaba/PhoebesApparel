@@ -1,8 +1,9 @@
-<div class="container-fluid mb-3 py-4">
+<div class="container-fluid my-5 py-4" id="contact">
     <div class="row my-3">
         <div class="col-12 col-md-2"></div>
         <div class="col-12 col-md-8">
-            <div class="container input-group d-flex flex-column bg-secondary bg-gradient p-4 m-2">
+            <form action="" method="post"
+                class="container input-group d-flex flex-column bg-secondary bg-gradient p-4 rounded m-2">
                 <h3 class="mb-3 text-white fw-bold">
                     Contact
                 </h3>
@@ -23,10 +24,12 @@
                     <textarea class="form-control" id="messageContact" placeholder="Message" rows="5"></textarea>
                     <label for="messageContact"><i class="bi bi-chat-left-dots-fill"></i> Message</label>
                 </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-outline-success">Contact</button>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-warning">Send</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="col-12 col-md-2"></div>
     </div>
