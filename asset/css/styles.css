@@ -1,5 +1,13 @@
+#bg-carousel-slide,
+#bg-carousel-slide .carousel-inner,
 #bg-carousel-slide .carousel-item{
-    height: 60vh;
+    height: 100%;
+}
+
+#bg-carousel-slide .carousel-item{
+    position: relative;
+    height: 100vh;
+    min-height: 100vh;
 }
 
 #bg-carousel-slide .carousel-item img{

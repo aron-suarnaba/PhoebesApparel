@@ -1,7 +1,7 @@
 <div class="container-fluid bg-dark bg-gradient text-white" style="min-height: 6vh;" id="about">
     <div class="row py-5">
-        <div class="col-12 col-md-4">
-
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+            <h3 class="fw-bold display-4">About Us</h3>
         </div>
         <div class="col-12 col-md-4 px-2 py-3 d-flex align-items-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic, consectetur velit voluptate beatae doloribus nihil blanditiis facilis incidunt rem deserunt officiis id asperiores voluptatum nam. Ad commodi ab aperiam!
