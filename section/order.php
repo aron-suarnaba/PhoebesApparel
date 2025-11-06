@@ -40,9 +40,9 @@
                                 <div class='card-body p-2'>
                                     <img src='asset\images\images-1.jpg' alt='Product Image' class='img-fluid'>
                                     <p class='p-1'>$row[description]</p>
-                                    <p class='lead px-1'>$row[u_m]$row[price] </p>
+                                    <p class='lead px-1 fw-bold'>$row[u_m]$row[price] </p>
                                 </div>
-                                <div class='card-footer'>
+                                <div class='card-footer bg-light'>
                                     <div class='button-group d-flex justify-content-between'>
                                         <div class='btn btn-secondary'>Cancel</div>
                                         <div class='btn btn-success'>Add to cart</div>
