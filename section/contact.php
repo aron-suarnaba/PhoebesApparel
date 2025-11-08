@@ -1,5 +1,5 @@
 <div class="container-fluid my-5 py-4" id="contact">
-    <div class="row my-3">
+    <div class="row my-3" data-aos="fade-up" data-aos-delay="500" data-aos-ease="ease-in-sine">
         <div class="col-12 col-md-2"></div>
         <div class="col-12 col-md-8">
             <form action="" method="post"

@@ -1,5 +1,5 @@
 <div class="container-fluid bg-dark bg-gradient text-white" style="min-height: 6vh;" id="about">
-    <div class="row py-5">
+    <div class="row py-5"  data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="600">
         <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
             <h3 class="fw-bold display-4">About Us</h3>
         </div>

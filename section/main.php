@@ -26,7 +26,7 @@
         class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 z-1"></div>
 
-        <div class="text-white text-center position-relative z-2    ">
+        <div class="text-white text-center position-relative z-2    " data-aos="fade-down" data-aos-delay="600" data-aos-easing="linear">
             <h1 class="fw-bold display-2">Welcome to</h1>
             <span class="fw-bold display-2 text-warning"><?php echo $website_title; ?></span>
             <h3 class="display-4">Where quality exceeds the price</h3>

@@ -12,6 +12,7 @@ $website_title = "Phoebe's Apparel & Foodhub"
     <link rel="stylesheet" href="..\asset\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\asset\css\bootstrap-icons-1.13.1\bootstrap-icons.min.css">
     <link rel="stylesheet" href="..\asset\css\styles.css">
+    <link rel="stylesheet" href="..\asset\aos-master\dist\aos.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100 g-0">
@@ -28,10 +29,10 @@ $website_title = "Phoebe's Apparel & Foodhub"
                     <?php 
 
                     if (isset($_SESSION['user_id'])){
+                        echo '<li class="navbar-item"><a href="#logout" class="nav-link text-blue">Logout</a></li>';
+                    } else {
                         echo '<li class="navbar-item"><a href="#loginModal" class="nav-link text-white" data-bs-toggle="modal"
                         data-bs-target="#loginModal">Login</a></li>';
-                    } else {
-                        echo '<li class="navbar-item"><a href="#logout" class="nav-link text-blue">Logout</a></li>';
                     }
 
                     ?>
@@ -45,6 +46,10 @@ $website_title = "Phoebe's Apparel & Foodhub"
 
     <script src="..\asset\js\main.js"> </script>
     <script src="..\asset\js\bootstrap.bundle.min.js"></script>
+    <script src="..\asset\aos-master\dist\aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
@@ -53,7 +58,7 @@ $website_title = "Phoebe's Apparel & Foodhub"
 <div class="modal fade" id="loginModal" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <form action="authentication.php" method="post">
+            <form action="/../authentication/login.php" method="post">
                 <div class="modal-header">
                     <div class="modal-title fs-5" id="modalLabel">
                         Login
@@ -63,12 +68,12 @@ $website_title = "Phoebe's Apparel & Foodhub"
                 <div class="modal-body p-">
 
                     <div class="form-floating mb-3 mt-3">
-                        <input type="email" id="loginEmail" class="form-control" placeholder="Email">
+                        <input type="email" name="email" id="loginEmail" class="form-control" placeholder="Email">
                         <label for="loginEmail">Email</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="password" id="loginPassword" class="form-control" placeholder="Password">
+                        <input type="password" name="password" id="loginPassword" class="form-control" placeholder="Password">
                         <label for="loginPassword">Password</label>
                     </div>
 
@@ -80,7 +85,7 @@ $website_title = "Phoebe's Apparel & Foodhub"
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 </div>
             </form>
         </div>
