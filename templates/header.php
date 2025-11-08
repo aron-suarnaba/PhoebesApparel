@@ -1,5 +1,5 @@
 <?php
-include '..\db.php';
+include (__DIR__ . '/../db.php');
 $website_title = "Phoebe's Apparel & Foodhub"
     ?>
 <!DOCTYPE html>
