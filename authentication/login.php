@@ -18,12 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login_submit'])){
     $password = $_POST['password'];
 
 
-
     if($users && password_verify($password, $users['password'])) {
-        session_start();
         $_SESSION['user_id'] = $users['id'];
-
-        header('Location: /../section/home.php');
+        header('Location: ../section/home.php');
         exit();
     } else {
         header('Location: /index.php');

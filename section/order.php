@@ -24,10 +24,11 @@
         </div>
         <div class="row my-3">
             <?php
-                $sql = "SELECT * FROM product";
-                $result = $connection->query($sql);
+                $stmt = $pdo->prepare("SELECT * FROM product");
 
-                while($row = $result->fetch_assoc()){
+                $stmt->execute();
+
+                while($row = $stmt->fetch()){
                     echo "
                     <div class='col-sm-12 col-md-3'>
                         <div class='card'>

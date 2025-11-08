@@ -1,13 +1,21 @@
 <?php
 
-$servername = "localhost";
+$host = "localhost";
 $username = "root";
 $password = "";
-$database = "pbs-apparel";
+$db = "pbs-apparel";
+$charset = "utf8mb4";
 
-$connection = new mysqli($servername, $username, $password, $database);
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES => false,
+];
 
-if($connection->connect_error){
-    die("Connection Error: " . $connection->connect_error);
+try{
+    $pdo = new PDO($dsn, $username, $password, $options);
+} catch(\PDOException $e){
+    die("Connection Error: " . $e->getMessage());
 }
 ?>
