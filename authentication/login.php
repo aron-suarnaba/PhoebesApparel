@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login_submit'])){
 
     if($users && password_verify($password, $users['password'])) {
         $_SESSION['user_id'] = $users['id'];
-        header('Location: ../section/home.php');
+        header('Location: ../section/home/home.php');
         exit();
     } else {
         header('Location: /index.php');
